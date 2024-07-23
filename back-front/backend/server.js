@@ -5,23 +5,21 @@ app.get('/', (req, res) => {
     res.send('hello this is server')
 })
 
-const port = process.env.PORT || 3006
+const port = process.env.PORT || 3007
 
-app.get('/obj', (req, res) => {
-    const obj = [{
+app.get('/api/jokes', (req, res) => {
+    const jokes = [{
         id: 1,
-        name: "sachin",
-        about: "i am sachin"
+        title: "joke 1",
+        content: "i am joke 1"
     },
 
     {
         id: 2,
-        name: "steve",
-        about: "i am steve"
-
-
+        title: "joke 2",
+        content: "i am joke 2"
     }]
-    res.send(obj)
+    res.send(jokes)
 
 })
 app.listen(port, () => {
