@@ -18,9 +18,15 @@ app.get('/api/jokes', (req, res) => {
         id: 2,
         title: "joke 2",
         content: "i am joke 2"
-    }]
-    res.send(jokes)
+    },
+    {
+        id: 3,
+        title: "joke 3",
+        content: "i am joke "
+    }
 
+]
+    res.send(jokes)
 })
 app.listen(port, () => {
     console.log(`this is a port ${port}`)
