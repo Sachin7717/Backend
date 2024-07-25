@@ -22,7 +22,12 @@ app.get('/api/jokes', (req, res) => {
     {
         id: 3,
         title: "joke 3",
-        content: "i am joke "
+        content: "i am joke 4"
+    },
+    {
+        id: 4,
+        title: "joke 4",
+        content: "i am joke 4 "
     }
 
 ]
