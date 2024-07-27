@@ -26,6 +26,8 @@ function App() {
             <h3>{joke.title}</h3>
             <p>{joke.content}</p>
 
+            <div>hello this is a joke website</div>
+
 
           </div>
         ))
